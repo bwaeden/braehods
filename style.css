@@ -1,0 +1,394 @@
+/* ═══════════════════════════════════════════════════
+   braehods.com — shared stylesheet
+═══════════════════════════════════════════════════ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg:         #0d0d0d;
+  --surface:    #161616;
+  --border:     #222222;
+  --border-mid: #2e2e2e;
+  --text:       #e8e4df;
+  --sub:        #a09a94;
+  --muted:      #6b6560;
+  --dim:        #3a3530;
+  --link-bg:    #1a1a1a;
+  --link-hover: #202020;
+}
+
+html { font-size: 16px; -webkit-font-smoothing: antialiased; }
+
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  font-weight: 300;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 24px;
+}
+
+/* ── Fade-in ───────────────────────────────────── */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(14px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+.fade { opacity: 0; animation: fadeUp 0.5s cubic-bezier(0.22, 1, 0.36, 1) forwards; }
+.d1  { animation-delay: 0.05s; }
+.d2  { animation-delay: 0.12s; }
+.d3  { animation-delay: 0.19s; }
+.d4  { animation-delay: 0.26s; }
+.d5  { animation-delay: 0.33s; }
+.d6  { animation-delay: 0.39s; }
+.d7  { animation-delay: 0.45s; }
+.d8  { animation-delay: 0.51s; }
+.d9  { animation-delay: 0.57s; }
+.d10 { animation-delay: 0.63s; }
+.d11 { animation-delay: 0.69s; }
+.d12 { animation-delay: 0.75s; }
+.d13 { animation-delay: 0.81s; }
+
+/* ── Card ──────────────────────────────────────── */
+.card {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* ── Photo ─────────────────────────────────────── */
+.photo-wrap { width: 96px; height: 96px; margin-bottom: 18px; }
+.photo-wrap img {
+  width: 100%; height: 100%;
+  object-fit: cover; border-radius: 50%;
+  display: block; filter: grayscale(6%);
+}
+.photo-wrap .initials {
+  width: 100%; height: 100%; border-radius: 50%;
+  background: var(--surface); border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 26px; font-weight: 400; color: var(--muted);
+}
+
+/* ── Name + location ───────────────────────────── */
+.name {
+  font-size: 20px; font-weight: 400;
+  letter-spacing: 0.01em; color: var(--text);
+  margin-bottom: 4px;
+}
+.location {
+  font-size: 12px; color: var(--muted);
+  letter-spacing: 0.06em; text-transform: lowercase;
+  margin-bottom: 16px;
+}
+
+/* ── Tagline ───────────────────────────────────── */
+.tagline {
+  font-size: 13px; font-weight: 300; color: var(--sub);
+  line-height: 1.65; text-align: center;
+  max-width: 300px; margin-bottom: 24px;
+}
+
+/* ── Divider ───────────────────────────────────── */
+.divider {
+  width: 100%; height: 1px;
+  background: var(--border);
+  margin: 4px 0 20px;
+}
+
+/* ── Section label ─────────────────────────────── */
+.section-label {
+  width: 100%;
+  font-size: 10px; font-weight: 500;
+  color: var(--muted); letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 8px; margin-top: 4px;
+}
+
+/* ── Link items ────────────────────────────────── */
+.links { width: 100%; display: flex; flex-direction: column; gap: 8px; }
+
+.link-item {
+  display: flex; align-items: center; justify-content: space-between;
+  width: 100%; padding: 13px 16px;
+  background: var(--link-bg); border: 1px solid var(--border); border-radius: 10px;
+  text-decoration: none; color: var(--text);
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    transform 0.2s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.2s ease;
+  cursor: pointer;
+}
+.link-item:hover {
+  background: var(--link-hover); border-color: var(--border-mid);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
+
+.link-left { display: flex; align-items: center; gap: 12px; }
+
+.link-icon {
+  width: 34px; height: 34px; border-radius: 8px;
+  background: var(--surface); border: 1px solid var(--border);
+  display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+}
+.link-icon svg { width: 15px; height: 15px; fill: var(--sub); }
+
+.link-text { display: flex; flex-direction: column; gap: 2px; }
+.link-platform { font-size: 13px; font-weight: 400; color: var(--text); }
+.link-handle   { font-size: 11px; color: var(--muted); letter-spacing: 0.02em; }
+.link-arrow    { color: var(--muted); font-size: 13px; flex-shrink: 0; }
+
+/* ── Connect button ────────────────────────────── */
+.connect-btn {
+  width: 100%;
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 13px 18px;
+  background: var(--text); border: none; border-radius: 10px;
+  color: #0d0d0d; font-family: inherit; font-size: 13px;
+  font-weight: 500; letter-spacing: 0.03em;
+  cursor: pointer;
+  transition:
+    opacity 0.15s ease,
+    transform 0.2s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.2s ease;
+  margin-bottom: 20px;
+}
+.connect-btn:hover {
+  opacity: 0.87;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(232, 228, 223, 0.1);
+}
+.connect-btn svg { width: 14px; height: 14px; fill: currentColor; flex-shrink: 0; }
+
+/* ── Secondary button ──────────────────────────── */
+.secondary-btn {
+  width: 100%;
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  padding: 13px 18px;
+  background: var(--link-bg); border: 1px solid var(--border); border-radius: 10px;
+  color: var(--sub); font-family: inherit; font-size: 13px;
+  font-weight: 400; letter-spacing: 0.02em;
+  cursor: pointer; text-decoration: none;
+  transition:
+    background 0.15s ease,
+    border-color 0.15s ease,
+    color 0.15s ease,
+    transform 0.2s cubic-bezier(0.22, 1, 0.36, 1),
+    box-shadow 0.2s ease;
+}
+.secondary-btn:hover {
+  background: var(--link-hover); border-color: var(--border-mid);
+  color: var(--text);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.3);
+}
+.secondary-btn svg { width: 14px; height: 14px; fill: currentColor; flex-shrink: 0; }
+
+/* ── Top nav (interior pages) ──────────────────── */
+.top-nav {
+  width: 100%; max-width: 420px;
+  display: flex; align-items: center; justify-content: space-between;
+  margin-bottom: 32px;
+  padding: 0 2px;
+}
+.back-link {
+  font-size: 12px; color: var(--muted); text-decoration: none;
+  letter-spacing: 0.04em;
+  transition: color 0.15s ease;
+}
+.back-link:hover { color: var(--sub); }
+.top-nav-title {
+  font-size: 11px; color: var(--dim);
+  letter-spacing: 0.1em; text-transform: uppercase;
+}
+
+/* ── Content cards (interior pages) ────────────── */
+.content-card {
+  width: 100%;
+  background: var(--link-bg); border: 1px solid var(--border); border-radius: 10px;
+  padding: 18px 18px 16px;
+  margin-bottom: 10px;
+}
+.content-card-label {
+  display: block; font-size: 10px; font-weight: 500;
+  color: var(--muted); letter-spacing: 0.1em; text-transform: uppercase;
+  margin-bottom: 10px;
+}
+.content-card p {
+  font-size: 13px; font-weight: 300; color: var(--sub);
+  line-height: 1.75;
+}
+.content-card ul {
+  list-style: none; padding: 0;
+  display: flex; flex-direction: column; gap: 6px;
+}
+.content-card ul li {
+  font-size: 13px; color: var(--sub); line-height: 1.5;
+  padding-left: 14px; position: relative;
+}
+.content-card ul li::before {
+  content: '—';
+  position: absolute; left: 0;
+  color: var(--dim); font-size: 11px;
+}
+
+/* Skill tags */
+.tags {
+  display: flex; flex-wrap: wrap; gap: 6px;
+}
+.tag {
+  font-size: 11px; color: var(--sub);
+  background: var(--surface); border: 1px solid var(--border);
+  border-radius: 6px; padding: 4px 10px;
+  letter-spacing: 0.02em;
+}
+
+/* ── Page header (interior) ────────────────────── */
+.page-header {
+  font-size: 18px; font-weight: 400;
+  letter-spacing: 0.01em; color: var(--text);
+  margin-bottom: 22px; align-self: flex-start;
+}
+
+/* ── Footer ────────────────────────────────────── */
+footer {
+  margin-top: 36px;
+  font-size: 11px; color: var(--dim);
+  letter-spacing: 0.08em; text-transform: lowercase;
+}
+footer a {
+  color: inherit; text-decoration: none;
+  transition: color 0.15s ease;
+}
+footer a:hover { color: var(--muted); }
+
+/* ── Interior page layout (wider) ──────────────── */
+.page-card {
+  max-width: 640px;
+}
+.page-nav {
+  max-width: 640px;
+}
+
+/* ── Responsive ────────────────────────────────── */
+@media (max-width: 480px) {
+  body { padding: 32px 20px; justify-content: flex-start; padding-top: 52px; }
+}
+
+
+/* ═══════════════════════════════════════════════════
+   MODAL
+═══════════════════════════════════════════════════ */
+
+@keyframes modalIn {
+  from { opacity: 0; transform: translateY(18px) scale(0.97); }
+  to   { opacity: 1; transform: translateY(0) scale(1); }
+}
+@keyframes overlayIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+.overlay {
+  display: none; position: fixed; inset: 0;
+  background: rgba(0,0,0,0.78);
+  backdrop-filter: blur(8px); -webkit-backdrop-filter: blur(8px);
+  z-index: 100;
+  align-items: center; justify-content: center; padding: 24px;
+}
+.overlay.open {
+  display: flex;
+  animation: overlayIn 0.2s ease forwards;
+}
+
+.modal {
+  background: #111111; border: 1px solid #252525; border-radius: 16px;
+  padding: 26px 26px 22px;
+  width: 100%; max-width: 400px;
+  animation: modalIn 0.28s cubic-bezier(0.22, 1, 0.36, 1) forwards;
+}
+.modal-header {
+  display: flex; align-items: flex-start; justify-content: space-between;
+  margin-bottom: 5px;
+}
+.modal-title { font-size: 15px; font-weight: 400; color: var(--text); }
+.modal-close {
+  background: none; border: none; cursor: pointer;
+  color: var(--muted); font-size: 18px; line-height: 1;
+  padding: 0; font-family: inherit;
+  transition: color 0.15s ease;
+}
+.modal-close:hover { color: var(--text); }
+.modal-sub { font-size: 12px; color: var(--muted); margin-bottom: 20px; line-height: 1.5; }
+
+.form-group { margin-bottom: 12px; }
+.form-group label {
+  display: block; font-size: 10px; font-weight: 500;
+  color: var(--muted); letter-spacing: 0.08em; text-transform: uppercase; margin-bottom: 5px;
+}
+.form-group input,
+.form-group textarea {
+  width: 100%; background: #0d0d0d;
+  border: 1px solid var(--border); border-radius: 8px;
+  padding: 10px 13px; color: var(--text);
+  font-family: inherit; font-size: 13px; font-weight: 300;
+  outline: none; resize: none;
+  transition: border-color 0.15s ease;
+}
+.form-group input:focus,
+.form-group textarea:focus { border-color: #3a3a3a; }
+.form-group input::placeholder,
+.form-group textarea::placeholder { color: #3a3835; }
+.form-group textarea { height: 96px; }
+
+.form-submit {
+  width: 100%; padding: 12px;
+  background: var(--text); border: none; border-radius: 8px;
+  color: #0d0d0d; font-family: inherit; font-size: 13px; font-weight: 500;
+  cursor: pointer; margin-top: 4px;
+  transition: opacity 0.15s ease;
+}
+.form-submit:hover { opacity: 0.87; }
+.form-submit:disabled { opacity: 0.35; cursor: not-allowed; }
+
+/* Success */
+.modal-success {
+  display: none; flex-direction: column;
+  align-items: center; justify-content: center;
+  text-align: center; padding: 28px 0 16px; gap: 14px;
+}
+.modal-success.show { display: flex; }
+.modal-success .check {
+  width: 46px; height: 46px; border-radius: 50%;
+  background: #1a2a1a; border: 1px solid #2d4a2d;
+  display: flex; align-items: center; justify-content: center;
+}
+.modal-success .check svg { width: 20px; height: 20px; fill: #6abf6a; }
+.modal-success .success-title {
+  font-size: 14px; font-weight: 400; color: var(--text);
+  margin-bottom: 2px;
+}
+.modal-success .success-sub {
+  font-size: 12px; color: var(--muted); line-height: 1.6;
+}
+.modal-success .close-success {
+  margin-top: 6px; font-size: 12px; color: var(--muted);
+  background: none; border: none; cursor: pointer;
+  font-family: inherit; letter-spacing: 0.03em;
+  transition: color 0.15s ease;
+}
+.modal-success .close-success:hover { color: var(--sub); }
+
+/* Error */
+.form-error {
+  display: none; font-size: 12px; color: #bf6a6a;
+  margin-top: 8px; text-align: center;
+}
+.form-error.show { display: block; }
