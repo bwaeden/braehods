@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Braeden</title>
+  <meta name="description" content="About Braeden." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body { justify-content: flex-start; padding-top: 52px; }
+    .card { align-items: flex-start; }
+    .photo-wrap { align-self: center; margin-bottom: 16px; }
+    .name, .location { align-self: center; }
+  </style>
+</head>
+<body>
+
+  <nav class="top-nav page-nav fade d1">
+    <a class="back-link" href="index.html">← back</a>
+    <span class="top-nav-title">About</span>
+  </nav>
+
+  <div class="card page-card">
+
+    <div class="photo-wrap fade d2">
+      <img src="images/photo.jpg" alt="Braeden"
+           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+      <div class="initials" style="display:none;">B</div>
+    </div>
+    <h1 class="name fade d3">Braeden</h1>
+    <p class="location fade d4" style="margin-bottom:24px;">Student · Los Angeles</p>
+
+    <!-- About Me -->
+    <div class="content-card fade d5">
+      <span class="content-card-label">About Me</span>
+      <p>
+        <!-- ✏️ Write your bio here. Keep it real and direct — 2-4 sentences. -->
+        [Write your bio here. Where you're from, what you're studying, what drives you. Keep it honest and direct — not a LinkedIn summary, just who you actually are.]
+      </p>
+    </div>
+
+    <!-- Currently -->
+    <div class="content-card fade d6">
+      <span class="content-card-label">Currently</span>
+      <p>
+        <!-- ✏️ What are you doing right now? School, projects, goals. -->
+        [What are you focused on right now? What are you studying, building, working toward? Be specific.]
+      </p>
+    </div>
+
+    <!-- Interests -->
+    <div class="content-card fade d7">
+      <span class="content-card-label">Interests</span>
+      <ul>
+        <li>Business &amp; entrepreneurship</li>
+        <li>Finance &amp; investing</li>
+        <li>Fashion &amp; personal style</li>
+        <li>Content creation &amp; brand building</li>
+        <!-- ✏️ Add or remove items -->
+      </ul>
+    </div>
+
+    <!-- Values / what drives you -->
+    <div class="content-card fade d8">
+      <span class="content-card-label">What I'm Building Toward</span>
+      <p>
+        <!-- ✏️ Your long-term vision. What's the end goal? -->
+        [Your long-term vision. Where do you see yourself in 5 years? What kind of brand or business do you want to build? What does success look like to you?]
+      </p>
+    </div>
+
+    <div style="height:8px;"></div>
+
+    <!-- Connect CTA -->
+    <button class="connect-btn fade d9" onclick="window.location='index.html'">
+      <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      Connect
+    </button>
+
+  </div>
+
+  <footer class="fade d10"><a href="index.html">braehods.com</a></footer>
+
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Work — Braeden</title>
+  <meta name="description" content="Work and resume — Braeden." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body { justify-content: flex-start; padding-top: 52px; }
+    .card { align-items: flex-start; }
+
+    /* Experience item */
+    .exp-item { margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
+    .exp-item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
+    .exp-title {
+      font-size: 13px; font-weight: 400; color: var(--text);
+      margin-bottom: 2px;
+    }
+    .exp-meta {
+      font-size: 11px; color: var(--muted); letter-spacing: 0.02em;
+      margin-bottom: 5px;
+    }
+    .exp-desc { font-size: 12px; color: var(--sub); line-height: 1.65; }
+
+  </style>
+</head>
+<body>
+
+  <nav class="top-nav page-nav fade d1">
+    <a class="back-link" href="index.html">← back</a>
+    <span class="top-nav-title">Work</span>
+  </nav>
+
+  <div class="card page-card">
+
+    <h2 class="page-header fade d2">Work &amp; Resume</h2>
+
+    <!-- Education -->
+    <div class="content-card fade d3">
+      <span class="content-card-label">Education</span>
+      <div class="exp-item">
+        <p class="exp-title">
+          <!-- ✏️ Your school name -->
+          [University / College Name]
+        </p>
+        <p class="exp-meta">
+          <!-- ✏️ Degree, major, expected graduation -->
+          [Degree] · [Major] · Expected [Year]
+        </p>
+        <p class="exp-desc">
+          <!-- ✏️ Optional: relevant coursework, GPA, clubs, activities -->
+          [Relevant coursework, activities, or anything worth noting.]
+        </p>
+      </div>
+    </div>
+
+    <!-- Experience -->
+    <div class="content-card fade d4">
+      <span class="content-card-label">Experience</span>
+
+      <div class="exp-item">
+        <p class="exp-title">
+          <!-- ✏️ Role or project title -->
+          [Role / Project Title]
+        </p>
+        <p class="exp-meta">
+          <!-- ✏️ Company or context, date range -->
+          [Company or Context] · [Date Range]
+        </p>
+        <p class="exp-desc">
+          <!-- ✏️ 1-2 sentences about what you did and what it produced -->
+          [What you did and what it produced. Be specific — numbers help.]
+        </p>
+      </div>
+
+      <div class="exp-item">
+        <p class="exp-title">Personal Brand — braehods</p>
+        <p class="exp-meta">Creator & Brand Builder · 2024 – Present</p>
+        <p class="exp-desc">
+          Building a personal brand across Instagram, TikTok, and X at the intersection of business, fashion, and culture. Designed and launched braehods.com as a personal hub and portfolio.
+        </p>
+      </div>
+
+      <!-- ✏️ Duplicate the exp-item block above to add more entries -->
+    </div>
+
+    <!-- Skills -->
+    <div class="content-card fade d5">
+      <span class="content-card-label">Skills</span>
+      <div class="tags">
+        <span class="tag">Business strategy</span>
+        <span class="tag">Finance</span>
+        <span class="tag">Brand building</span>
+        <span class="tag">Content creation</span>
+        <span class="tag">Social media</span>
+        <span class="tag">Fashion & aesthetics</span>
+        <!-- ✏️ Add or remove tags -->
+      </div>
+    </div>
+
+    <!-- Open to -->
+    <div class="content-card fade d6">
+      <span class="content-card-label">Open To</span>
+      <ul>
+        <li>Creative collaborations and brand deals</li>
+        <li>Internships in business, finance, or fashion</li>
+        <li>Networking with builders and founders</li>
+        <!-- ✏️ Edit this list to match what you're actually open to -->
+      </ul>
+    </div>
+
+    <div style="height:8px;"></div>
+
+    <!-- Connect -->
+    <button class="connect-btn fade d8" onclick="window.location='index.html'" style="margin-top:2px;">
+      <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
+      Connect
+    </button>
+
+  </div>
+
+  <footer class="fade d9"><a href="index.html">braehods.com</a></footer>
+
+  <style>
+    /* ✏️ To add your resume PDF: place resume.pdf in the same folder as this file.
+       The download button will link to it automatically. */
+  </style>
+
+</body>
+</html>
