@@ -4,130 +4,352 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Work — Braeden</title>
-  <meta name="description" content="Work and resume — Braeden." />
+  <meta name="description" content="Work and résumé — Braeden Hodson." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <style>
-    body { justify-content: flex-start; padding-top: 52px; }
-    .card { align-items: flex-start; }
-
-    /* Experience item */
-    .exp-item { margin-bottom: 16px; padding-bottom: 16px; border-bottom: 1px solid var(--border); }
-    .exp-item:last-child { margin-bottom: 0; padding-bottom: 0; border-bottom: none; }
-    .exp-title {
-      font-size: 13px; font-weight: 400; color: var(--text);
-      margin-bottom: 2px;
-    }
-    .exp-meta {
-      font-size: 11px; color: var(--muted); letter-spacing: 0.02em;
-      margin-bottom: 5px;
-    }
-    .exp-desc { font-size: 12px; color: var(--sub); line-height: 1.65; }
-
-  </style>
+  <script>const FORMSPREE_ID = 'xqeypnkw';</script>
 </head>
 <body>
 
-  <nav class="top-nav page-nav fade d1">
-    <a class="back-link" href="index.html">← back</a>
-    <span class="top-nav-title">Work</span>
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="nav-mark" href="index.html">Braeden</a>
+      <div class="nav-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="#" onclick="openModal();return false;">Connect</a>
+      </div>
+    </div>
   </nav>
 
-  <div class="card page-card">
+  <div class="wrap-narrow">
 
-    <h2 class="page-header fade d2">Work &amp; Resume</h2>
+    <!-- Page hero -->
+    <header class="page-hero">
+      <a class="back-link fade d1" href="index.html">Back</a>
+      <h1 class="page-title fade d2">Work<span class="period">.</span></h1>
+      <p class="page-lede fade d3">
+        A running tally of what I'm building, where I've shown up, and what I've actually used in anger.
+      </p>
+    </header>
 
     <!-- Education -->
-    <div class="content-card fade d3">
-      <span class="content-card-label">Education</span>
-      <div class="exp-item">
-        <p class="exp-title">
-          <!-- ✏️ Your school name -->
-          [University / College Name]
-        </p>
-        <p class="exp-meta">
-          <!-- ✏️ Degree, major, expected graduation -->
-          [🚧] · [🚧] · 🚧 [🚧]
-        </p>
-        <p class="exp-desc">
-          <!-- ✏️ Optional: relevant coursework, GPA, clubs, activities -->
-          [🚧🚧🚧]
-        </p>
+    <section class="cv-section">
+      <h3 class="cv-head">Education</h3>
+      <div class="cv-item fade d1">
+        <div class="cv-date">Fall 2024 — Present</div>
+        <div class="cv-body">
+          <div class="cv-title">Santa Monica College</div>
+          <div class="cv-where">Associate of Arts, Business Administration &amp; Management · Santa Monica, CA</div>
+          <p class="cv-desc">
+            Dean's List, Fall 2024. Currently transferring to a 4-year university.
+          </p>
+        </div>
       </div>
-    </div>
+    </section>
+
+    <!-- Ventures -->
+    <section class="cv-section">
+      <h3 class="cv-head">Ventures</h3>
+
+      <div class="cv-item fade d1">
+        <div class="cv-date"><span class="live">2024 — Present</span></div>
+        <div class="cv-body">
+          <div class="cv-title">braehods — personal brand</div>
+          <div class="cv-where">Founder · Creator</div>
+          <p class="cv-desc">
+            Independent media brand across Instagram, TikTok, YouTube, and this site.
+            Writing, filming, editing, and distributing short-form content. Building
+            an owned audience to support future ventures.
+          </p>
+          <div class="cv-tags">
+            <span class="cv-tag warm">Live</span>
+            <span class="cv-tag">Brand</span>
+            <span class="cv-tag">Short-form</span>
+            <span class="cv-tag">Distribution</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="cv-item fade d2">
+        <div class="cv-date"><span class="live">2026 — Present</span></div>
+        <div class="cv-body">
+          <div class="cv-title">no-more-slop</div>
+          <div class="cv-where">Founder · Independent project</div>
+          <p class="cv-desc">
+            Chrome extension that hard-blocks short-form and algorithmic feeds
+            during focus sessions. Designed, built, and shipped end-to-end.
+            Open source on GitHub.
+          </p>
+          <div class="cv-tags">
+            <span class="cv-tag warm">Shipped</span>
+            <span class="cv-tag">Chrome ext</span>
+            <span class="cv-tag">Open source</span>
+            <span class="cv-tag">Consumer</span>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <!-- Experience -->
-    <div class="content-card fade d4">
-      <span class="content-card-label">Experience</span>
+    <section class="cv-section">
+      <h3 class="cv-head">Professional experience</h3>
 
-      <div class="exp-item">
-        <p class="exp-title">
-          <!-- ✏️ Role or project title -->
-          [🚧]
-        </p>
-        <p class="exp-meta">
-          <!-- ✏️ Company or context, date range -->
-          [🚧] · [🚧]
-        </p>
-        <p class="exp-desc">
-          <!-- ✏️ 1-2 sentences about what you did and what it produced -->
-          [🚧]
-        </p>
+      <div class="cv-item fade d1">
+        <div class="cv-date">Aug 2024 — Apr 2025</div>
+        <div class="cv-body">
+          <div class="cv-title">Forever 21</div>
+          <div class="cv-where">Sales Associate · Sherman Oaks, CA</div>
+          <p class="cv-desc">
+            Processed customer transactions efficiently using POS systems while
+            maintaining organized product displays. Delivered personalized,
+            team-oriented customer service that consistently generated positive feedback.
+          </p>
+        </div>
       </div>
 
-      <div class="exp-item">
-        <p class="exp-title">Personal Brand — braehods</p>
-        <p class="exp-meta">Creator · 2024 – Present</p>
-        <p class="exp-desc">
-          🚧.
-        </p>
+      <div class="cv-item fade d2">
+        <div class="cv-date">Aug 2023 — Dec 2023</div>
+        <div class="cv-body">
+          <div class="cv-title">Traco Investment Corporation</div>
+          <div class="cv-where">Student Intern · Van Nuys, CA</div>
+          <p class="cv-desc">
+            Managed case files and debtor profiles in support of debt-collection
+            operations — updating contact records and monitoring account balances.
+            Led a digitization initiative scanning and cataloging large volumes of
+            physical records, supporting the company's transition to a fully
+            paperless system.
+          </p>
+        </div>
       </div>
 
-      <!-- ✏️ Duplicate the exp-item block above to add more entries -->
-    </div>
+      <div class="cv-item fade d3">
+        <div class="cv-date">Apr 2023 — Nov 2023</div>
+        <div class="cv-body">
+          <div class="cv-title">Yogurtland</div>
+          <div class="cv-where">Crew Member · Encino, CA</div>
+          <p class="cv-desc">
+            Supported food preparation and order fulfillment in a high-volume
+            environment, maintaining quality, efficiency, and hygiene standards
+            across all workstations.
+          </p>
+        </div>
+      </div>
+
+      <div class="cv-item fade d4">
+        <div class="cv-date">Oct 2022 — Mar 2023</div>
+        <div class="cv-body">
+          <div class="cv-title">Robeks Smoothies</div>
+          <div class="cv-where">Crew Member · Encino, CA</div>
+          <p class="cv-desc">
+            Delivered customer service in a fast-paced setting, collaborating
+            with staff to ensure timely order fulfillment and consistent product
+            quality during busy service periods.
+          </p>
+        </div>
+      </div>
+
+      <div class="cv-item fade d5">
+        <div class="cv-date">Jun 2022 — Aug 2022</div>
+        <div class="cv-body">
+          <div class="cv-title">Advantage Audio Post Sound Services</div>
+          <div class="cv-where">Engineering Intern · Burbank, CA</div>
+          <p class="cv-desc">
+            Hands-on Pro Tools experience producing practice sessions under
+            professional sound engineers, working alongside clients from
+            <strong>Disney</strong>, <strong>Warner Bros.</strong>, and
+            <strong>DreamWorks</strong>. Organized session files and documented
+            post-production workflows.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership -->
+    <section class="cv-section">
+      <h3 class="cv-head">Leadership &amp; activities</h3>
+
+      <div class="cv-item fade d1">
+        <div class="cv-date">Jun 2020 — Aug 2024</div>
+        <div class="cv-body">
+          <div class="cv-title">National League of Young Men (NLYM)</div>
+          <div class="cv-where">Vice President, Member &amp; Mentor · Los Angeles, CA</div>
+          <p class="cv-desc">
+            Served as Vice President of a youth leadership and philanthropy
+            organization throughout high school, overseeing meetings, cultural
+            events, and community charity initiatives. Organized and executed
+            fundraising and service events — building strong event-planning,
+            team-leadership, and community-engagement skills.
+          </p>
+        </div>
+      </div>
+
+      <div class="cv-item fade d2">
+        <div class="cv-date">Apr 2025 — Dec 2025</div>
+        <div class="cv-body">
+          <div class="cv-title">Entrepreneurs Valley</div>
+          <div class="cv-where">Club Member · Santa Monica College</div>
+          <p class="cv-desc">
+            Pitched startup concepts in front of active LA-area investors.
+            Trained in professional networking etiquette, business-model
+            development, and prototyping methodologies through a hands-on
+            entrepreneurship curriculum.
+          </p>
+        </div>
+      </div>
+    </section>
 
     <!-- Skills -->
-    <div class="content-card fade d5">
-      <span class="content-card-label">Skills</span>
-      <div class="tags">
-        <span class="tag">Business strategy</span>
-        <span class="tag">Finance</span>
-        <span class="tag">Brand building</span>
-        <span class="tag">Content creation</span>
-        <span class="tag">Social media</span>
-        <!-- ✏️ Add or remove tags -->
+    <section class="cv-section">
+      <h3 class="cv-head">Skills</h3>
+      <div class="skill-cloud fade d1">
+        <span class="skill-tag">Business strategy</span>
+        <span class="skill-tag">Sales &amp; business development</span>
+        <span class="skill-tag">Brand building</span>
+        <span class="skill-tag">Customer service</span>
+        <span class="skill-tag">Short-form content</span>
+        <span class="skill-tag">Pro Tools</span>
+        <span class="skill-tag">Web (HTML / CSS / JS)</span>
+        <span class="skill-tag">Building in public</span>
       </div>
-    </div>
+    </section>
 
     <!-- Open to -->
-    <div class="content-card fade d6">
-      <span class="content-card-label">Open To</span>
-      <ul>
-        <li>Creative collaborations and brand deals</li>
-        <li>Internships in business, finance, or fashion</li>
-        <li>Networking with builders and founders</li>
-        <!-- ✏️ Edit this list to match what you're actually open to -->
+    <section class="cv-section">
+      <h3 class="cv-head">Open to</h3>
+      <ul class="open-list fade d1">
+        <li>Internships in <strong>business</strong>, <strong>finance</strong>, or <strong>brand</strong></li>
+        <li>Creative collaborations and brand deals that fit the work</li>
+        <li>Networking with builders, founders, and operators in LA</li>
+        <li>Anything where I learn faster than I'd learn anywhere else</li>
       </ul>
-    </div>
-
-    <div style="height:8px;"></div>
+    </section>
 
     <!-- Connect -->
-    <button class="connect-btn fade d8" onclick="window.location='index.html'" style="margin-top:2px;">
-      <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-      Connect
-    </button>
+    <section class="connect-band">
+      <div class="connect-band-inner">
+        <h2 class="section-title">Get in touch<span class="period">.</span></h2>
+        <p class="section-sub">See something worth working on together?</p>
+        <div style="margin-top: 32px;">
+          <button class="btn btn-primary" onclick="openModal()">
+            Send a message <span class="arrow">→</span>
+          </button>
+        </div>
+        <div class="socials-row">
+          <a class="social-pill" href="https://www.instagram.com/braehods" target="_blank" rel="noopener">Instagram</a>
+          <a class="social-pill" href="https://www.tiktok.com/@braeden." target="_blank" rel="noopener">TikTok</a>
+          <a class="social-pill" href="https://x.com/braed" target="_blank" rel="noopener">X</a>
+          <a class="social-pill" href="https://snapchat.com/add/braeden" target="_blank" rel="noopener">Snapchat</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div>© 2026 Braeden Hodson · <a href="index.html">braehods.com</a></div>
+    </footer>
 
   </div>
 
-  <footer class="fade d9"><a href="index.html">braehods.com</a></footer>
+  <!-- MODAL -->
+  <div class="overlay" id="overlay" onclick="handleOverlayClick(event)">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-header">
+        <h2 class="modal-title" id="modal-title">Send a message.</h2>
+        <button class="modal-close" onclick="closeModal()" aria-label="Close">✕</button>
+      </div>
+      <p class="modal-sub">Business, collabs, or anything else. I read everything.</p>
 
-  <style>
-    /* ✏️ To add your resume PDF: place resume.pdf in the same folder as this file.
-       The download button will link to it automatically. */
-  </style>
+      <div id="form-body">
+        <form id="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="c-name">Name</label>
+            <input id="c-name" name="name" type="text" placeholder="Your name" required autocomplete="off" />
+          </div>
+          <div class="form-group">
+            <label for="c-email">Email</label>
+            <input id="c-email" name="email" type="email" placeholder="your@email.com" required autocomplete="off" />
+          </div>
+          <div class="form-group">
+            <label for="c-message">Message</label>
+            <textarea id="c-message" name="message" placeholder="What's on your mind?" required></textarea>
+          </div>
+          <button class="form-submit" type="submit" id="submit-btn">Send</button>
+          <p class="form-error" id="form-error"></p>
+        </form>
+      </div>
+
+      <div class="modal-success" id="modal-success">
+        <div class="check">
+          <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+        </div>
+        <div>
+          <p class="success-title">Message sent.</p>
+          <p class="success-sub">I'll get back to you soon.</p>
+        </div>
+        <button class="close-success" onclick="closeModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openModal() {
+      document.getElementById('overlay').classList.add('open');
+      document.body.style.overflow = 'hidden';
+      setTimeout(() => document.getElementById('c-name').focus(), 80);
+    }
+    function closeModal() {
+      document.getElementById('overlay').classList.remove('open');
+      document.body.style.overflow = '';
+      setTimeout(() => {
+        document.getElementById('form-body').style.display = 'block';
+        document.getElementById('modal-success').classList.remove('show');
+        const btn = document.getElementById('submit-btn');
+        btn.disabled = false; btn.textContent = 'Send';
+        document.getElementById('contact-form').reset();
+        document.getElementById('form-error').classList.remove('show');
+      }, 300);
+    }
+    function handleOverlayClick(e) {
+      if (e.target === document.getElementById('overlay')) closeModal();
+    }
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+    async function handleSubmit(e) {
+      e.preventDefault();
+      const btn = document.getElementById('submit-btn');
+      const errorEl = document.getElementById('form-error');
+      const form = document.getElementById('contact-form');
+
+      btn.disabled = true; btn.textContent = 'Sending…';
+      errorEl.classList.remove('show');
+
+      if (FORMSPREE_ID === 'YOUR_FORM_ID') {
+        errorEl.textContent = 'Contact form not configured yet.';
+        errorEl.classList.add('show');
+        btn.disabled = false; btn.textContent = 'Send';
+        return;
+      }
+
+      try {
+        const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+          method: 'POST', body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          document.getElementById('form-body').style.display = 'none';
+          document.getElementById('modal-success').classList.add('show');
+        } else { throw new Error(); }
+      } catch {
+        errorEl.textContent = 'Something went wrong. Try again.';
+        errorEl.classList.add('show');
+        btn.disabled = false; btn.textContent = 'Send';
+      }
+    }
+  </script>
 
 </body>
 </html>

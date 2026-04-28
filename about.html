@@ -4,85 +4,215 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About — Braeden</title>
-  <meta name="description" content="About Braeden." />
+  <meta name="description" content="About Braeden — business student and entrepreneur in Los Angeles." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-  <style>
-    body { justify-content: flex-start; padding-top: 52px; }
-    .card { align-items: flex-start; }
-    .photo-wrap { align-self: center; margin-bottom: 16px; }
-    .name, .location { align-self: center; }
-  </style>
+  <script>const FORMSPREE_ID = 'xqeypnkw';</script>
 </head>
 <body>
 
-  <nav class="top-nav page-nav fade d1">
-    <a class="back-link" href="index.html">← back</a>
-    <span class="top-nav-title">About</span>
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="nav-mark" href="index.html">Braeden</a>
+      <div class="nav-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="#" onclick="openModal();return false;">Connect</a>
+      </div>
+    </div>
   </nav>
 
-  <div class="card page-card">
+  <div class="wrap-narrow">
 
-    <div class="photo-wrap fade d2">
-      <img src="images/photo.jpg" alt="Braeden"
-           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
-      <div class="initials" style="display:none;">B</div>
+    <!-- Page hero -->
+    <header class="page-hero">
+      <a class="back-link fade d1" href="index.html">Back</a>
+      <h1 class="page-title fade d2">About<span class="period">.</span></h1>
+      <p class="page-lede fade d3">A short field guide to who I am and what I'm chasing.</p>
+    </header>
+
+    <!-- Bio sections -->
+    <div class="bio-sections">
+
+      <div class="bio-block fade d1">
+        <div class="bio-block-eyebrow">In short</div>
+        <h2 class="bio-block-title">A business student in LA, building publicly.</h2>
+        <div class="bio-block-body">
+          <p>
+            I'm Braeden. I build consumer products, run a small content brand,
+            and study most things they don't put on a syllabus. Mostly: figuring
+            out how to make things people want, before someone else does.
+          </p>
+          <p>I'd rather <strong>ship</strong> than talk about shipping.</p>
+        </div>
+      </div>
+
+      <div class="bio-block fade d2">
+        <div class="bio-block-eyebrow">Currently</div>
+        <h2 class="bio-block-title">Studying, shipping, posting.</h2>
+        <div class="bio-block-body">
+          <p>
+            Studying business at <strong>Santa Monica College</strong> —
+            Dean's List, Fall 2024 — and transferring to a 4-year university
+            soon. Building <strong>no-more-slop</strong> on the side and
+            posting on every platform that lets me.
+          </p>
+          <p>Looking for projects, partners, and ideas worth pouring real time into.</p>
+        </div>
+      </div>
+
+      <div class="bio-block fade d3">
+        <div class="bio-block-eyebrow">What I'm into</div>
+        <h2 class="bio-block-title">A short list.</h2>
+        <div class="bio-block-body">
+          <ul>
+            <li>Consumer products and how they grow from zero</li>
+            <li>Markets, capital, and the people who move them</li>
+            <li>Content as a distribution moat — earned attention beats paid</li>
+            <li>Building in public, and the discipline it forces</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bio-block fade d4">
+        <div class="bio-block-eyebrow">Building toward</div>
+        <h2 class="bio-block-title">A business worth my name.</h2>
+        <div class="bio-block-body">
+          <p>
+            Not picky about the shape. Picky about the work. Stacking skills —
+            <strong>product</strong>, <strong>narrative</strong>, and <strong>capital</strong> —
+            until they compound.
+          </p>
+        </div>
+      </div>
+
     </div>
-    <h1 class="name fade d3">Braeden</h1>
-    <p class="location fade d4" style="margin-bottom:24px;">Student · Los Angeles</p>
 
-    <!-- About Me -->
-    <div class="content-card fade d5">
-      <span class="content-card-label">About Me</span>
-      <p>
-        <!-- ✏️ Write your bio here. Keep it real and direct — 2-4 sentences. -->
-        [Work in progress... Check back later! -B.]
-      </p>
-    </div>
+    <!-- Connect -->
+    <section class="connect-band">
+      <div class="connect-band-inner">
+        <h2 class="section-title">Get in touch<span class="period">.</span></h2>
+        <p class="section-sub">If something here resonates, say so.</p>
+        <div style="margin-top: 32px;">
+          <button class="btn btn-primary" onclick="openModal()">
+            Send a message <span class="arrow">→</span>
+          </button>
+        </div>
+        <div class="socials-row">
+          <a class="social-pill" href="https://www.instagram.com/braehods" target="_blank" rel="noopener">Instagram</a>
+          <a class="social-pill" href="https://www.tiktok.com/@braeden." target="_blank" rel="noopener">TikTok</a>
+          <a class="social-pill" href="https://x.com/braed" target="_blank" rel="noopener">X</a>
+          <a class="social-pill" href="https://snapchat.com/add/braeden" target="_blank" rel="noopener">Snapchat</a>
+        </div>
+      </div>
+    </section>
 
-    <!-- Currently -->
-    <div class="content-card fade d6">
-      <span class="content-card-label">Currently</span>
-      <p>
-        <!-- ✏️ What are you doing right now? School, projects, goals. -->
-        [🚧🚧🚧]
-      </p>
-    </div>
-
-    <!-- Interests -->
-    <div class="content-card fade d7">
-      <span class="content-card-label">Interests</span>
-      <ul>
-        <li>Business &amp; entrepreneurship</li>
-        <li>Finance &amp; investing</li>
-        <li>Project &amp; Web development</li>
-        <li>Content Creation</li>
-        <!-- ✏️ Add or remove items -->
-      </ul>
-    </div>
-
-    <!-- Values / what drives you -->
-    <div class="content-card fade d8">
-      <span class="content-card-label">What I'm Building Toward</span>
-      <p>
-        <!-- ✏️ Your long-term vision. What's the end goal? -->
-        [🚧🚧🚧]
-      </p>
-    </div>
-
-    <div style="height:8px;"></div>
-
-    <!-- Connect CTA -->
-    <button class="connect-btn fade d9" onclick="window.location='index.html'">
-      <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-      Connect
-    </button>
+    <!-- Footer -->
+    <footer class="footer">
+      <div>© 2026 Braeden · <a href="index.html">braehods.com</a></div>
+    </footer>
 
   </div>
 
-  <footer class="fade d10"><a href="index.html">braehods.com</a></footer>
+  <!-- MODAL -->
+  <div class="overlay" id="overlay" onclick="handleOverlayClick(event)">
+    <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <div class="modal-header">
+        <h2 class="modal-title" id="modal-title">Send a message.</h2>
+        <button class="modal-close" onclick="closeModal()" aria-label="Close">✕</button>
+      </div>
+      <p class="modal-sub">Business, collabs, or anything else. I read everything.</p>
+
+      <div id="form-body">
+        <form id="contact-form" onsubmit="handleSubmit(event)">
+          <div class="form-group">
+            <label for="c-name">Name</label>
+            <input id="c-name" name="name" type="text" placeholder="Your name" required autocomplete="off" />
+          </div>
+          <div class="form-group">
+            <label for="c-email">Email</label>
+            <input id="c-email" name="email" type="email" placeholder="your@email.com" required autocomplete="off" />
+          </div>
+          <div class="form-group">
+            <label for="c-message">Message</label>
+            <textarea id="c-message" name="message" placeholder="What's on your mind?" required></textarea>
+          </div>
+          <button class="form-submit" type="submit" id="submit-btn">Send</button>
+          <p class="form-error" id="form-error"></p>
+        </form>
+      </div>
+
+      <div class="modal-success" id="modal-success">
+        <div class="check">
+          <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+        </div>
+        <div>
+          <p class="success-title">Message sent.</p>
+          <p class="success-sub">I'll get back to you soon.</p>
+        </div>
+        <button class="close-success" onclick="closeModal()">Close</button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function openModal() {
+      document.getElementById('overlay').classList.add('open');
+      document.body.style.overflow = 'hidden';
+      setTimeout(() => document.getElementById('c-name').focus(), 80);
+    }
+    function closeModal() {
+      document.getElementById('overlay').classList.remove('open');
+      document.body.style.overflow = '';
+      setTimeout(() => {
+        document.getElementById('form-body').style.display = 'block';
+        document.getElementById('modal-success').classList.remove('show');
+        const btn = document.getElementById('submit-btn');
+        btn.disabled = false; btn.textContent = 'Send';
+        document.getElementById('contact-form').reset();
+        document.getElementById('form-error').classList.remove('show');
+      }, 300);
+    }
+    function handleOverlayClick(e) {
+      if (e.target === document.getElementById('overlay')) closeModal();
+    }
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+
+    async function handleSubmit(e) {
+      e.preventDefault();
+      const btn = document.getElementById('submit-btn');
+      const errorEl = document.getElementById('form-error');
+      const form = document.getElementById('contact-form');
+
+      btn.disabled = true; btn.textContent = 'Sending…';
+      errorEl.classList.remove('show');
+
+      if (FORMSPREE_ID === 'YOUR_FORM_ID') {
+        errorEl.textContent = 'Contact form not configured yet.';
+        errorEl.classList.add('show');
+        btn.disabled = false; btn.textContent = 'Send';
+        return;
+      }
+
+      try {
+        const res = await fetch(`https://formspree.io/f/${FORMSPREE_ID}`, {
+          method: 'POST', body: new FormData(form),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          document.getElementById('form-body').style.display = 'none';
+          document.getElementById('modal-success').classList.add('show');
+        } else { throw new Error(); }
+      } catch {
+        errorEl.textContent = 'Something went wrong. Try again.';
+        errorEl.classList.add('show');
+        btn.disabled = false; btn.textContent = 'Send';
+      }
+    }
+  </script>
 
 </body>
 </html>

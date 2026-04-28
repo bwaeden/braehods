@@ -4,154 +4,145 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Braeden</title>
-  <meta name="description" content="Student and creator based in Los Angeles." />
+  <meta name="description" content="Braeden — business student & entrepreneur in Los Angeles. Building things." />
   <meta property="og:title" content="Braeden" />
-  <meta property="og:description" content="Student and creator based in Los Angeles." />
+  <meta property="og:description" content="Business student & entrepreneur in Los Angeles." />
   <meta property="og:image" content="images/photo.jpg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
-
-  <!--
-    ── FORMSPREE ─────────────────────────────────────────────────
-    Replace YOUR_FORM_ID with your Formspree form ID.
-    Get one free at https://formspree.io
-    ──────────────────────────────────────────────────────────────
-  -->
   <script>const FORMSPREE_ID = 'xqeypnkw';</script>
 </head>
 <body>
 
-  <div class="card">
-
-    <!-- Identity -->
-    <div class="photo-wrap fade d1">
-      <img src="images/photo.jpg" alt="Braeden"
-           onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
-      <div class="initials" style="display:none;">B</div>
+  <!-- Nav -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a class="nav-mark" href="index.html">Braeden</a>
+      <div class="nav-links">
+        <a href="work.html">Work</a>
+        <a href="about.html">About</a>
+        <a href="#" onclick="openModal();return false;">Connect</a>
+      </div>
     </div>
-    <h1 class="name fade d2">Braeden</h1>
-    <p class="location fade d3">Student · Los Angeles</p>
-    
+  </nav>
+
+  <div class="wrap">
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="hero-photo fade d2">
+        <img src="images/photo.jpg" alt="Braeden"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='flex';" />
+        <div class="initials" style="display:none;">B</div>
+      </div>
+      <div class="hero-greet fade d3">Hey there</div>
+      <h1 class="hero-name fade d4">I'm Braeden<span class="period">.</span></h1>
+      <p class="hero-tagline fade d5">
+        Business student and entrepreneur in Los Angeles.
+        I build things, run a small content brand, and study what they don't put on the syllabus.
+      </p>
+      <div class="hero-actions fade d6">
+        <button class="btn btn-primary" onclick="openModal()">
+          Send a message <span class="arrow">→</span>
+        </button>
+        <a class="btn btn-ghost" href="work.html">
+          See my work
+        </a>
+      </div>
+    </section>
+
+    <!-- Currently building -->
+    <section class="section">
+      <div class="section-header center fade d1">
+        <div class="section-eyebrow">Currently building</div>
+        <h2 class="section-title">Things I'm working on<span class="period">.</span></h2>
+        <p class="section-sub">A few projects I'm putting real time into right now.</p>
+      </div>
+
+      <div class="projects">
+
+        <a class="project fade d2" href="https://github.com/bwaeden/no-more-slop" target="_blank" rel="noopener">
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Chrome extension</span>
+              <span class="project-tag">Open source</span>
+              <span class="project-tag">Shipped</span>
+            </div>
+            <div class="project-title">no-more-slop</div>
+            <p class="project-desc">
+              Hard-blocks short-form and algorithmic feeds during focus sessions.
+              For people who don't trust their own scroll. Built it because I needed it.
+            </p>
+            <div class="project-meta">github.com/bwaeden/no-more-slop</div>
+          </div>
+          <div class="project-arrow">↗</div>
+        </a>
+
+        <a class="project fade d3" href="https://www.instagram.com/braehods" target="_blank" rel="noopener">
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Personal brand</span>
+              <span class="project-tag">Short-form content</span>
+              <span class="project-tag">Live</span>
+            </div>
+            <div class="project-title">braehods</div>
+            <p class="project-desc">
+              An independent media brand across Instagram, TikTok, and YouTube.
+              Building an audience around the things I'm actually thinking about.
+            </p>
+            <div class="project-meta">@braehods</div>
+          </div>
+          <div class="project-arrow">↗</div>
+        </a>
+
+      </div>
+    </section>
+
+    <!-- About excerpt -->
+    <section class="about-excerpt">
+      <p class="fade d1">
+        I'd rather <strong>ship</strong> than talk about shipping.
+        I care about consumer products, distribution, and turning small bets into real ones.
+      </p>
+      <a href="about.html" class="text-link fade d2">More about me</a>
+    </section>
 
     <!-- Connect -->
-    <button class="connect-btn fade d5" onclick="openModal()">
-      <svg viewBox="0 0 24 24"><path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/></svg>
-      Connect
-    </button>
-
-    <div class="divider fade d5"></div>
-
-    <!-- Pages -->
-    <span class="section-label fade d6">Pages</span>
-    <nav class="links" style="margin-bottom:16px;" aria-label="Site pages">
-
-      <a class="link-item fade d6" href="about.html">
-        <div class="link-left">
-          <div class="link-icon">
-            <svg viewBox="0 0 24 24"><path d="M12 12c2.7 0 4.8-2.1 4.8-4.8S14.7 2.4 12 2.4 7.2 4.5 7.2 7.2 9.3 12 12 12zm0 2.4c-3.2 0-9.6 1.6-9.6 4.8v2.4h19.2v-2.4c0-3.2-6.4-4.8-9.6-4.8z"/></svg>
-          </div>
-          <div class="link-text">
-            <span class="link-platform">About</span>
-            <span class="link-handle">who I am</span>
-          </div>
+    <section class="connect-band">
+      <div class="connect-band-inner">
+        <h2 class="section-title">Get in touch<span class="period">.</span></h2>
+        <p class="section-sub">Got a venture, a question, or just something worth saying? Mail it in.</p>
+        <div style="margin-top: 32px;">
+          <button class="btn btn-primary" onclick="openModal()">
+            Send a message <span class="arrow">→</span>
+          </button>
         </div>
-        <span class="link-arrow">→</span>
-      </a>
-
-      <a class="link-item fade d7" href="work.html">
-        <div class="link-left">
-          <div class="link-icon">
-            <svg viewBox="0 0 24 24"><path d="M20 6h-2.18c.07-.44.18-.86.18-1.3C18 2.99 16.21 1.5 14 1.5c-1.3 0-2.4.65-3.11 1.65L10 4.08l-.89-.93C8.4 2.15 7.3 1.5 6 1.5 3.79 1.5 2 2.99 2 4.7c0 .44.11.86.18 1.3H0v14h24V6h-4zm-4.5-1.3c0 .65-.5 1.3-1.5 1.3H12l1.5-1.87c.18-.22.45-.38.75-.43.74 0 1.25.55 1.25 1zM6 4.4c0-.44.55-1 1.25-1 .3.05.57.21.75.43L9.5 5.7H8c-1 0-2-.65-2-1.3zM22 18H2V8h20v10z"/></svg>
-          </div>
-          <div class="link-text">
-            <span class="link-platform">Work</span>
-            <span class="link-handle">resume & projects</span>
-          </div>
+        <div class="socials-row">
+          <a class="social-pill" href="https://www.instagram.com/braehods" target="_blank" rel="noopener">Instagram</a>
+          <a class="social-pill" href="https://www.tiktok.com/@braeden." target="_blank" rel="noopener">TikTok</a>
+          <a class="social-pill" href="https://x.com/braed" target="_blank" rel="noopener">X</a>
+          <a class="social-pill" href="https://snapchat.com/add/braeden" target="_blank" rel="noopener">Snapchat</a>
         </div>
-        <span class="link-arrow">→</span>
-      </a>
+      </div>
+    </section>
 
-    </nav>
-
-    <!-- Socials -->
-    <span class="section-label fade d8">Socials</span>
-    <nav class="links" aria-label="Social links">
-
-      <a class="link-item fade d8" href="https://www.instagram.com/braehods" target="_blank" rel="noopener">
-        <div class="link-left">
-          <div class="link-icon">
-            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-          </div>
-          <div class="link-text">
-            <span class="link-platform">Instagram</span>
-            <span class="link-handle">@braehods</span>
-          </div>
-        </div>
-        <span class="link-arrow">↗</span>
-      </a>
-
-      <a class="link-item fade d9" href="https://www.tiktok.com/@braeden." target="_blank" rel="noopener">
-        <div class="link-left">
-          <div class="link-icon">
-            <svg viewBox="0 0 24 24"><path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-2.88 2.5 2.89 2.89 0 0 1-2.89-2.89 2.89 2.89 0 0 1 2.89-2.89c.28 0 .54.04.79.1V9.01a6.33 6.33 0 0 0-.79-.05 6.34 6.34 0 0 0-6.34 6.34 6.34 6.34 0 0 0 6.34 6.34 6.34 6.34 0 0 0 6.33-6.34V8.69a8.17 8.17 0 0 0 4.77 1.52V6.76a4.85 4.85 0 0 1-1-.07z"/></svg>
-          </div>
-          <div class="link-text">
-            <span class="link-platform">TikTok</span>
-            <span class="link-handle">@braeden.</span>
-          </div>
-        </div>
-        <span class="link-arrow">↗</span>
-      </a>
-
-      <a class="link-item fade d10" href="https://x.com/braed" target="_blank" rel="noopener">
-        <div class="link-left">
-          <div class="link-icon">
-            <svg viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.747l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-          </div>
-          <div class="link-text">
-            <span class="link-platform">X / Twitter</span>
-            <span class="link-handle">@braed</span>
-          </div>
-        </div>
-        <span class="link-arrow">↗</span>
-      </a>
-
-      <!-- Snapchat ghost: smooth dome arc + Q-curve bumped skirt + eye holes -->
-      <a class="link-item fade d11" href="https://snapchat.com/add/braeden" target="_blank" rel="noopener">
-        <div class="link-left">
-          <div class="link-icon">
-            <svg viewBox="0 0 24 24">
-              <path d="M4 10A8 8 0 0 1 20 10L20 19Q17 16 14 19Q11 16 8 19Q5 16 4 19Z" fill="#a09a94"/>
-              <circle cx="9.5" cy="8.5" r="1.1" fill="#161616"/>
-              <circle cx="14.5" cy="8.5" r="1.1" fill="#161616"/>
-            </svg>
-          </div>
-          <div class="link-text">
-            <span class="link-platform">Snapchat</span>
-            <span class="link-handle">@braeden</span>
-          </div>
-        </div>
-        <span class="link-arrow">↗</span>
-      </a>
-
-    </nav>
+    <!-- Footer -->
+    <footer class="footer">
+      <div>© 2026 Braeden · <a href="index.html">braehods.com</a></div>
+    </footer>
 
   </div>
 
-  <footer class="fade d12"><a href="index.html">braehods.com</a></footer>
-
-
-  <!-- MODAL ─────────────────────────────────────── -->
+  <!-- ─────────────── MODAL ─────────────── -->
   <div class="overlay" id="overlay" onclick="handleOverlayClick(event)">
     <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
-
       <div class="modal-header">
-        <h2 class="modal-title" id="modal-title">Send a message</h2>
+        <h2 class="modal-title" id="modal-title">Send a message.</h2>
         <button class="modal-close" onclick="closeModal()" aria-label="Close">✕</button>
       </div>
-      <p class="modal-sub">Business, collabs, or anything else.</p>
+      <p class="modal-sub">Business, collabs, or anything else. I read everything.</p>
 
       <div id="form-body">
         <form id="contact-form" onsubmit="handleSubmit(event)">
@@ -182,10 +173,8 @@
         </div>
         <button class="close-success" onclick="closeModal()">Close</button>
       </div>
-
     </div>
   </div>
-
 
   <script>
     function openModal() {
@@ -196,7 +185,6 @@
     function closeModal() {
       document.getElementById('overlay').classList.remove('open');
       document.body.style.overflow = '';
-      // Reset after transition
       setTimeout(() => {
         document.getElementById('form-body').style.display = 'block';
         document.getElementById('modal-success').classList.remove('show');
@@ -235,7 +223,6 @@
         if (res.ok) {
           document.getElementById('form-body').style.display = 'none';
           document.getElementById('modal-success').classList.add('show');
-          // No auto-close — user closes manually via the Close button or Escape
         } else { throw new Error(); }
       } catch {
         errorEl.textContent = 'Something went wrong. Try again.';
